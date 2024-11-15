@@ -1,7 +1,5 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-function showHiddenPanel() {
-	const hiddenPanel = document.getElementById("hiddenPanel");
-	
-	hiddenPanel.classList.toggle('active');
+function showHiddenPanel() {	
+	document.querySelector(".wrapper").classList.toggle('open-side-bar');
 };

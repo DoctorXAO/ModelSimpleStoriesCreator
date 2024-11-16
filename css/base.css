@@ -21,6 +21,8 @@
 	--font-title-size: 7vw;
 	--font-button-size: 6vw;
 
+	--text-indent: 4vw;
+
 	--icon-size: 10vw;
 	--logo-size: 50vw;
 }
@@ -219,7 +221,7 @@ header {
 .account {
 	height: var(--icon-size);
 	width: var(--icon-size);
-	border-radius: 48px;
+	border-radius: 50%;
 	background-color: white;
 }
 
@@ -249,7 +251,7 @@ main {
 
 .main-section p {
 	font-size: var(--font-size);
-	text-indent: 45px;
+	text-indent: var(--text-indent);
 	text-align: justify;
 	margin: 10px 0 10px 0;
 }

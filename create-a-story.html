@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/message.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -22,20 +23,20 @@
 					<li>
 						<div class="hidden-panel-group">
 							<div class="hidden-panel-group-header">
-								<p>General</p>
+								<p lang="en">General</p>
 							</div>
 							<div class="hidden-panel-group-main">
-								<p onclick="openPage('index.html')">Home page</p>
+								<p onclick="openPage('index.html')" lang="en">Home page</p>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="hidden-panel-group">
 							<div class="hidden-panel-group-header">
-								Services
+								<p lang="en">Services</p>
 							</div>
 							<div class="hidden-panel-group-main">
-								<p onclick="openPage('create-a-story.html')">Create a story</p>
+								<p onclick="openPage('create-a-story.html')" lang="en">Create a story</p>
 							</div>
 						</div>
 					</li>
@@ -54,12 +55,96 @@
 			</div>
 		</header>
 		<main>
-			<!-- main -->
+			<section class="page-title">
+				<h1 lang="en">Create a story!</h1>
+			</section>
+			<section>
+				<div class="message-container">
+					<div class="message-recipient">
+						<div class="message-avatar-recipient">
+							<div class="account"></div>
+						</div>
+						<div class="message-content">
+							<p lang="en">Hello there! Please, type a name of a story into the text-field below.</p>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-sender">
+						<div class="message-content">
+							<p lang="en">My name of the story is...</p>
+						</div>
+						<div class="message-avatar-sender">
+							<div class="avatar-sender">
+								<p>You</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-sender">
+						<div class="message-content">
+							<input type="text" placeholder="Type a name of a story">
+						</div>
+						<div class="message-avatar-sender">
+							<div class="avatar-sender">
+								<p>You</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-recipient">
+						<div class="message-avatar-recipient">
+							<div class="account"></div>
+						</div>
+						<div class="message-content">
+							<p lang="en">Good! Your name of the story is <span id="theNameOfTheStory">NONE</span>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-recipient">
+						<div class="message-avatar-recipient">
+							<div class="account"></div>
+						</div>
+						<div class="message-content">
+							<p lang="en">Now, type a content of the story. When you finish, push the button at the bottom of the page.</p>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-sender">
+						<div class="message-content">
+							<p lang="en">My content of the story is...</p>
+						</div>
+						<div class="message-avatar-sender">
+							<div class="avatar-sender">
+								<p>You</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="message-container">
+					<div class="message-sender">
+						<div class="message-content">
+							<textarea placeholder="Type a content of the story"></textarea>
+						</div>
+						<div class="message-avatar-sender">
+							<div class="avatar-sender">
+								<p>You</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="submit" lang="en">Save the story</button>
+			</section>
 		</main>
 		<footer>
 			<p lang="en">&copy; <span id="year"></span> XAOTI. All rights reserved.</p>
 		</footer>
 	</div>
 	<script src="js/base.js"></script>
+	<script src="js/create-a-story.js"></script>
 </body>
 </html>

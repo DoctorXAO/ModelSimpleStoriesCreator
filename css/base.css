@@ -36,6 +36,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	background-color: var(--dark-color);
 	color: white;
 	font-family: var(--font-family);
 	font-size: var(--font-size);
@@ -50,8 +51,6 @@ p {
 }
 
 .wrapper {
-	background-color: lightblue;
-
 	height: 100%;
 
 	display: flex;
@@ -228,20 +227,18 @@ header {
 main {
 	flex: 1;
 
-	background-color: var(--dark-color);
+	background-color: var(--light-dark-color);
+	margin: 0 13%;
+	padding: 10px 25px;
+	border-left: var(--border-light-dark);
+	border-right: var(--border-light-dark);
 
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 }
 
 .main-section {
 	flex: 1;
-
-	background-color: var(--light-dark-color);
-	margin: 0 13%;
-	padding: 25px 25px 10px 25px;
-	border-left: var(--border-light-dark);
-	border-right: var(--border-light-dark);
 }
 
 .main-section h1 {

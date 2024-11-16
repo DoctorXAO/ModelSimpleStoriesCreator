@@ -1,0 +1,87 @@
+:root {
+	--darknest-color: #2c2c2c;
+	--dark-color: #464646;
+	--light-dark-color: #808080;
+	--text-color: white;
+	--button-color: purple;
+
+	--opacity: 0.5;
+	--opacity-transition: opacity 0.15s ease;
+	--filter-brightness: brightness(0.5);
+	--filter-transition: filter 0.15s ease;
+	--transform-transition: transform 0.5s ease;
+
+	--border-darknest: 1px solid #000000;
+	--border-light-dark: 1px solid #111111;
+	--border-darkviolet: 1vw solid darkviolet;
+
+	--font-family: Handjet;
+	--font-h1-size: 5vw;
+	--font-size: 4vw;
+	--font-title-size: 7vw;
+	--font-button-size: 6vw;
+
+	--text-indent: 4vw;
+
+	--icon-size: 10vw;
+	--logo-size: 50vw;
+}
+
+main {
+	transition: margin 1s ease;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.message-container {
+	background-color: var(--dark-color);
+	margin: 2px 0;
+}
+
+.message-recipient {
+	background-color: pink;
+	padding: 5px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+.message-sender {
+	background-color: lightblue;
+	padding: 5px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.message-avatar-recipient {
+	margin-right: 3vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.message-avatar-sender {
+	margin-left: 3vw;
+}
+
+.message-content {
+	flex: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.message-content p {
+	text-align: justify;
+}
+
+.message-content input, textarea {
+	width: 100%;
+}

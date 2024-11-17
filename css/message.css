@@ -15,7 +15,7 @@
 	--border-light-dark: 1px solid #111111;
 	--border-darkviolet: 1vw solid darkviolet;
 
-	--font-family: Handjet;
+	--font-family: 'Press Start 2P';
 	--font-h1-size: 5vw;
 	--font-size: 4vw;
 	--font-title-size: 7vw;
@@ -35,7 +35,7 @@ main {
 	text-align: center;
 }
 
-.message-container {
+.d {
 	background-color: var(--dark-color);
 	margin: 2px 0;
 }
